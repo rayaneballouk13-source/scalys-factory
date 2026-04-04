@@ -1,1 +1,166 @@
-`
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+    <title>Test Coiffeur à Lyon</title>
+</head>
+<body>
+
+<section class="relative min-h-screen overflow-hidden bg-stone-950 text-white">
+    <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80" alt="Background" class="h-full w-full object-cover"/>
+        <div class="absolute inset-0 bg-black/45"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-stone-950/20"></div>
+    </div>
+    <header class="relative z-20">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
+            <a href="#" class="shrink-0 text-2xl font-semibold tracking-tight">Test Coiffeur<span class="text-emerald-400">.</span></a>
+            <nav class="hidden items-center gap-8 md:flex">
+                <a href="#" class="text-sm text-white/80 transition hover:text-white">Accueil</a>
+                <a href="#services" class="text-sm text-white/80 transition hover:text-white">Services</a>
+                <a href="#temoignages" class="text-sm text-white/80 transition hover:text-white">Avis</a>
+                <a href="#contact" class="text-sm text-white/80 transition hover:text-white">Contact</a>
+            </nav>
+            <div class="hidden items-center gap-3 md:flex">
+                <a href="tel:600000000" class="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 backdrop-blur-sm transition hover:bg-white/10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M3 5.5C3 4.672 3.672 4 4.5 4h2.379c.718 0 1.34.49 1.507 1.188l.547 2.282a1.5 1.5 0 01-.792 1.676l-1.273.637a14.042 14.042 0 006.454 6.454l.637-1.273a1.5 1.5 0 011.676-.792l2.282.547A1.55 1.55 0 0120 17.121V19.5c0 .828-.672 1.5-1.5 1.5H18C9.716 21 3 14.284 3 6V5.5z"/></svg>
+                </a>
+                <a href="#contact" class="rounded-full bg-white px-5 py-2.5 text-sm font-medium text-black transition hover:bg-emerald-400">Prenez rendez-vous</a>
+            </div>
+        </div>
+    </header>
+    <div class="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center px-6 pb-16 pt-24 lg:px-10">
+        <div class="max-w-3xl">
+            <span class="mb-6 inline-flex rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-white/70 backdrop-blur-sm">Lyon · Coiffeur</span>
+            <h1 class="max-w-2xl text-5xl font-medium leading-[0.92] tracking-tight sm:text-6xl lg:text-8xl">Élégance et style à Lyon<span class="font-serif italic text-white/80"> pour un look moderne</span></h1>
+            <p class="mt-6 max-w-xl text-base leading-relaxed text-white/70 sm:text-lg">Découvrez une coiffure qui révèle votre personnalité. Révélez votre style avec nos experts.</p>
+            <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+                <a href="#contact" class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition hover:bg-emerald-400">Prenez rendez-vous</a>
+                <a href="tel:600000000" class="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-medium text-white backdrop-blur-sm transition hover:bg-white/10">Appeler maintenant</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="bg-stone-950 text-white py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+        <div class="max-w-2xl mb-16">
+            <h2 class="text-4xl md:text-5xl font-medium tracking-tight leading-tight">Nos services <span class="italic font-serif text-white/80">pour vous.</span></h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white text-black p-6 rounded-lg">
+                <h3 class="text-2xl font-semibold">Coupe et Brushing</h3>
+                <p class="mt-4 text-base">Sublimez votre look avec une coupe tendance et un brushing parfait.</p>
+            </div>
+            <div class="bg-white text-black p-6 rounded-lg">
+                <h3 class="text-2xl font-semibold">Coloration Professionnelle</h3>
+                <p class="mt-4 text-base">Apportez de la lumière et de la dimension à vos cheveux avec nos colorations personnalisées.</p>
+            </div>
+            <div class="bg-white text-black p-6 rounded-lg">
+                <h3 class="text-2xl font-semibold">Soin Capillaire</h3>
+                <p class="mt-4 text-base">Revitalisez vos cheveux avec des traitements nourrissants sur-mesure.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="temoignages" class="bg-stone-950 text-white px-6 py-24">
+    <div class="mx-auto max-w-6xl">
+        <div class="mb-16 max-w-2xl">
+            <span class="inline-block rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-white/60">Témoignages</span>
+            <h2 class="mt-6 text-4xl font-medium leading-tight tracking-tight md:text-5xl">La confiance se construit <span class="font-serif italic text-white/80">par les résultats.</span></h2>
+        </div>
+        <div class="grid gap-8 md:grid-cols-3">
+            <!-- Example testimonies can be added here -->
+        </div>
+    </div>
+</section>
+
+<section class="bg-stone-950 text-white px-6 py-24">
+    <div class="mx-auto max-w-5xl">
+        <div class="mb-14 max-w-2xl">
+            <span class="inline-block rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-white/60">FAQ</span>
+            <h2 class="mt-6 text-4xl font-medium leading-tight tracking-tight md:text-5xl">Vos questions <span class="font-serif italic text-white/80">essentielles.</span></h2>
+        </div>
+        <div class="space-y-4">
+            <div>
+                <h3 class="text-lg font-semibold">Quels produits utilisez-vous?</h3>
+                <p class="mt-2 text-white/70">Nous utilisons des produits de haute qualité pour garantir des résultats exceptionnels.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">Combien de temps dure une séance?</h3>
+                <p class="mt-2 text-white/70">La durée moyenne d'une séance est d'environ 1 à 2 heures selon le service choisi.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">Puis-je réserver en ligne?</h3>
+                <p class="mt-2 text-white/70">Oui, vous pouvez facilement prendre rendez-vous via notre site web.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">Offrez-vous des conseils personnalisés?</h3>
+                <p class="mt-2 text-white/70">Bien sûr, nos experts sont là pour vous offrir des conseils adaptés à vos besoins.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="bg-stone-950 text-white px-6 py-24">
+    <div class="mx-auto max-w-6xl">
+        <div class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 px-8 py-16 backdrop-blur-sm md:px-14 md:py-20">
+            <div class="max-w-3xl">
+                <span class="inline-block rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-white/60">Passez à l'action</span>
+                <h2 class="mt-6 text-4xl font-medium leading-tight tracking-tight md:text-5xl">Réservez dès maintenant<span class="font-serif italic text-white/80"> en toute sérénité.</span></h2>
+                <p class="mt-5 max-w-2xl text-base leading-relaxed text-white/65">Réservez dès maintenant en toute sérénité.</p>
+                <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+                    <a href="#contact" class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition-all duration-300 hover:bg-emerald-400 hover:scale-[1.02]">Prenez rendez-vous</a>
+                    <a href="tel:600000000" class="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-medium text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/10">Appeler le 600000000</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="relative overflow-hidden bg-[#0d4b47] text-white">
+    <div class="relative mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-3 lg:px-10">
+        <div class="max-w-md">
+            <a href="#" class="text-2xl font-semibold tracking-tight">Test Coiffeur</a>
+            <p class="mt-8 text-base leading-8 text-white/80">Test Coiffeur, votre expert beauté à Lyon. Transformez votre look avec nos spécialistes passionnés.</p>
+        </div>
+        <div>
+            <h3 class="text-sm font-medium uppercase tracking-[0.22em] text-white/55">Navigation</h3>
+            <ul class="mt-6 space-y-4 text-white/85">
+                <li><a href="#" class="transition hover:text-emerald-300">Accueil</a></li>
+                <li><a href="#services" class="transition hover:text-emerald-300">Services</a></li>
+                <li><a href="#temoignages" class="transition hover:text-emerald-300">Avis clients</a></li>
+                <li><a href="#contact" class="transition hover:text-emerald-300">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="text-sm font-medium uppercase tracking-[0.22em] text-white/55">Contact</h3>
+            <ul class="mt-6 space-y-4 text-white/85">
+                <li><a href="tel:600000000" class="transition hover:text-emerald-300">600000000</a></li>
+                <li><a href="mailto:test@mail.com" class="transition hover:text-emerald-300">test@mail.com</a></li>
+                <li class="text-white/60">Lyon</li>
+            </ul>
+        </div>
+    </div>
+    <div class="border-t border-black/10 bg-[#d8a23a] px-6 py-2 text-center text-xs text-black/80">
+        Copyright © 2026 Test Coiffeur. Tous droits réservés.
+    </div>
+</footer>
+
+</body>
+</html>
+``
